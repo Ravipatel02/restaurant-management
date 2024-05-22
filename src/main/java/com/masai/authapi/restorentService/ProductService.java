@@ -17,6 +17,6 @@ public interface ProductService {
 
 	Product deleteMenuItem(Integer productId) throws ProductIdNotFondException;
 
-	List<String> getAllProductNames();
+	List<Product> getAllProduct();
 
 }

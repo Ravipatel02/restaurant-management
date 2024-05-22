@@ -61,9 +61,9 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public List<String> getAllProductNames() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Product> getAllProduct() {
+		List<Product> allData = this.productrepository.findAll();
+		return allData;
 	}
 
 	

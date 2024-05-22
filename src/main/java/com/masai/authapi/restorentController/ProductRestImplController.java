@@ -9,6 +9,8 @@ import com.masai.authapi.Exception.ProductIdNotFondException;
 import com.masai.authapi.restorentEntity.Product;
 import com.masai.authapi.restorentService.ProductService;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/mymenu")
@@ -35,6 +37,12 @@ public class ProductRestImplController {
     public Product deleteMenuItem(@PathVariable Integer productId) throws ProductIdNotFondException {
         Product deleteMenuItem = this.productservice.deleteMenuItem(productId);
         return deleteMenuItem;
+    }
+
+    @GetMapping("/getData")
+    public List<Product> getAllData (){
+        List<Product> data= this.productservice.getAllProduct();
+        return data;
     }
 
 
