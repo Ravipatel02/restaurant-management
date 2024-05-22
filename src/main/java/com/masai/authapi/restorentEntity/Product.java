@@ -3,10 +3,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name="product")
 public class Product  {
 	
 	@Id
@@ -14,17 +12,17 @@ public class Product  {
 	private Integer productId;
 	private String productName;
 	private Integer productPrice;
-	
-	public Product() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+
+
 
 	public Product(Integer productId, String productName, Integer productPrice) {
-		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.productPrice = productPrice;
+	}
+
+	public Product() {
+
 	}
 
 	public Integer getProductId() {
@@ -56,11 +54,4 @@ public class Product  {
 		return "Product [productId=" + productId + ", productName=" + productName + ", productPrice=" + productPrice
 				+ "]";
 	}
-	
-	
-	
-	
-
-	
-
 }
