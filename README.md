@@ -1,7 +1,7 @@
 ### Resturant Management System
 ## Description
 <p>Resturant Management System is an online Sweets and Bakery store that allows Admin Add product and update Product and delete Product and get All project. The project is implemented using Spring Boot and provides RESTful APIs for managing products. The application is designed to be user-friendly and secure, with different functionalities available for administrators and customers.</p>
-## Implement JWT authentication in a Spring Boot 3 application && Restorent ManagementSystem
+<h3>Implement JWT authentication in a Spring Boot 3 application && Restorent ManagementSystem<h3>
 <p>One of the most popular and effective authentication methods in modern web applications is JSON Web Tokens (JWT). It provides a flexible and stateless way to verify users' identities and secure API endpoints; it is also called Token-Based Authentication.</p>
 
 ## What we will build
